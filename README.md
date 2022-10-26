@@ -20,7 +20,7 @@ ERROR: Test failed.
  >
  > 284 | 
  > 285 | 	[Test]
- > 286 | 	static void AddTest()
+ > 286 | 	static void Assertions()
  > 287 | 	{
  > 288 | 		Assert.Eq(2 + 2, 4);
  > 289 >>> 		Assert.Contains(int[](1, 2, 3), 4);
@@ -30,10 +30,9 @@ ERROR: Test failed.
 
 # Installing
 
-1. Clone this repo somewhere to your system
-2. In the Beef IDE, right-click workspace panel select "Add Existing Project".
-3. Find the directory you that was cloned earlier
-4. For each project that wiwill `Assert` 
+1. Clone this repo somewhere to your system.
+2. In the Beef IDE, right-click workspace panel select "Add Existing Project". Locate the directory you cloned earlier.
+3. For each project that will use `Assert`, right-click > Properties > Dependencies and select `Assert`.
 
 # Usage
 
