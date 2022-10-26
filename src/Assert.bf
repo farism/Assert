@@ -22,15 +22,16 @@ static class Assert
 			dict.Add(filePath, file);
 		}
 
-		let output = scope $""
-			..AppendF("\n")
-			..AppendF($" Assert(val1 {op} val2)\n", line, filePath)
-			..AppendF("\n")
-			..AppendF($" val1: {a}\n")
-			..AppendF($" val2: {b}\n")
-			..AppendF("\n")
-			..AppendF($" {filePath}\n")
-			..AppendF("\n");
+		let output = scope $"""
+			
+		 Assert(val1 {op} val2)
+
+		 val1: {a}
+		 val2: {b}
+			
+		 {filePath}
+
+		""";
 
 		var i = 0;
 		for (let str in file.Split("\n"))
