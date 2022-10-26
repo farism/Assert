@@ -35,6 +35,14 @@ ERROR: Test failed.
 3. Find the directory you that was cloned earlier
 4. For each project that wiwill `Assert` 
 
+# Usage
+
+```bf
+using Assert;
+
+Assert.Eq(1, 1);
+```
+
 # Features
 
 There is basic support for numerics, Strings, and IEnumerables.
